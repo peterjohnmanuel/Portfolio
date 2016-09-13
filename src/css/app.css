@@ -6275,11 +6275,9 @@ button.close {
   background: #000;
   color: #fff; }
 
-.panel-detail-entry {
-  border-top: 0.5px;
-  border-style: solid; }
-
-.project-thumbnail {
-  margin-bottom: 20px;
-  transition: background-color .5s ease;
-  background-color: #fff; }
+.ul-no-style {
+  padding: 0px;
+  padding-left: 25px; }
+  .ul-no-style li {
+    list-style: none;
+    font-size: 15px; }

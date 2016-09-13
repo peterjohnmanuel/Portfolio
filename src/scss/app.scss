@@ -6,25 +6,18 @@
 $mainBackground: #000 ;
 $mainForeColor: #fff;
 
-
 .main-background{
     background: $mainBackground;
     color: $mainForeColor;
 }
 
-.panel-detail-entry{
-    border-top: 0.5px;
-    border-style: solid
-}
+.ul-no-style{
 
-.project-thumbnail{
-    // display: block;
-    // margin:auto; 
-    // margin-bottom: 20px;
-    // border-radius: 10px;
-    // transition: border 1s ease-in-out;
+    padding: 0px;
+    padding-left: 25px; 
 
-    margin-bottom: 20px;
-    transition: background-color .5s ease;
-    background-color: #fff;
+    li{
+        list-style: none;
+        font-size: 15px;
+    }
 }
