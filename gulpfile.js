@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var plumber = require('gulp-plumber');
 
 var browserSync = require('browser-sync').create();
 
@@ -9,7 +10,7 @@ var browserSync = require('browser-sync').create();
 /** Directories */
 var directories = {
     baseDir: './src/',
-    bootstrapDir: './bower_components/bootstrap-sass',
+    bootstrapDir: './bower_components/bootstrap-sass/',
     cssDir: 'css/',
     distDir: './dist/',
     sassDir: 'scss/**/*.scss'
@@ -18,8 +19,9 @@ var directories = {
 /** Sass  */
 gulp.task('sass', function(){
     gulp.src(directories.baseDir + directories.sassDir)
-    .pipe(sass())
-    .pipe(sass({ includePaths: [config.bootstrapDir + '/assets/stylesheets'] }))
+    .pipe(plumber())
+    .pipe(sass({ includePaths: [directories.bootstrapDir + 'assets/stylesheets'] }))
+    //.pipe(sass())    
     .pipe(gulp.dest(directories.baseDir + directories.cssDir))
     .pipe(browserSync.reload({stream: true}));
 });
