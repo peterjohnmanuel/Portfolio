@@ -14,7 +14,26 @@
     "test",
     "tests"
   ],
+  "cInstall": {
+    "folder": {
+      "js": "src/js/",
+      "css": "src/css/",
+      "otf, eot, svg, ttf, woff": "src/fonts/"
+    },
+    "source": {
+      "bootstrap-sass": {
+        "bootstrap.min.js": "assets/javascripts/bootstrap.min.js"
+      },
+      "font-awesome": {
+        "font-awesome.min.css": "css/font-awesome.min.css"
+      },
+      "jquery": {
+        "jquery.min.js": "dist/jquery.min.js"
+      }
+    }
+  },
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "fontawesome#^4.6.3"
   }
 }
