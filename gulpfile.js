@@ -23,7 +23,6 @@ gulp.task('sass', function(){
     gulp.src(directories.baseDir + directories.sassDir)
     .pipe(plumber())
     .pipe(sass({ includePaths: [directories.bootstrapDir + 'assets/stylesheets'] }))
-    //.pipe(sass())    
     .pipe(gulp.dest(directories.baseDir + directories.cssDir))
     .pipe(browserSync.reload({stream: true}));
 });
@@ -56,6 +55,7 @@ gulp.task('watch', ['browser-sync'], function(){
 
     gulp.watch("./src/scss/*.scss", ['sass']);
     gulp.watch("./src/*.html").on('change', browserSync.reload);
+     gulp.watch("./src/js/**/*.js").on('change', browserSync.reload);
 
 });
 

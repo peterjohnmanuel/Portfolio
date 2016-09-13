@@ -3,8 +3,10 @@
 var technologies = [
 
     "C#.net",
+    "Gulp",
+    "Javascript",
     "Linq",
-    "WCF (Windows Communication Foundation)",
-    "SQL Server"
-
+    "Sass",
+    "SQL Server",
+    "WCF (Windows Communication Foundation)"
 ];
