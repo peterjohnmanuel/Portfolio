@@ -6270,3 +6270,16 @@ button.close {
   border-color: gainsboro;
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+.main-background {
+  background: #000;
+  color: #fff; }
+
+.panel-detail-entry {
+  border-top: 0.5px;
+  border-style: solid; }
+
+.project-thumbnail {
+  margin-bottom: 20px;
+  transition: background-color .5s ease;
+  background-color: #fff; }

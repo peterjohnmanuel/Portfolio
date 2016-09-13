@@ -1,2 +1,30 @@
 @import "bootstrap";
 @import "bootstrap/theme";
+
+
+
+$mainBackground: #000 ;
+$mainForeColor: #fff;
+
+
+.main-background{
+    background: $mainBackground;
+    color: $mainForeColor;
+}
+
+.panel-detail-entry{
+    border-top: 0.5px;
+    border-style: solid
+}
+
+.project-thumbnail{
+    // display: block;
+    // margin:auto; 
+    // margin-bottom: 20px;
+    // border-radius: 10px;
+    // transition: border 1s ease-in-out;
+
+    margin-bottom: 20px;
+    transition: background-color .5s ease;
+    background-color: #fff;
+}

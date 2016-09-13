@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
+var fontmin = require('gulp-fontmin');
 
 var browserSync = require('browser-sync').create();
 
@@ -13,8 +14,9 @@ var directories = {
     bootstrapDir: './bower_components/bootstrap-sass/',
     cssDir: 'css/',
     distDir: './dist/',
+    fontDir: './bower_components/font-awesome',
     sassDir: 'scss/**/*.scss'
-}
+};
 
 /** Sass  */
 gulp.task('sass', function(){
@@ -33,6 +35,20 @@ gulp.task('browser-sync', function(){
             baseDir: directories.baseDirectory
         }
     });
+});
+
+/**Fonts */
+gulp.task('font', function () {
+    gulp.src(directories.bootstrapDir + '/assets/fonts/**/*')
+        .pipe(fontmin())
+        .pipe(gulp.dest('fonts'))
+        .pipe(gulp.dest(directories.baseDir + 'fonts/'))
+        .pipe(browserSync.reload({stream: true}));
+        gulp.src(directories.fontDir + '/fonts/**/*')
+            .pipe(fontmin())
+            .pipe(gulp.dest('fonts'))
+            .pipe(gulp.dest(directories.baseDir + 'fonts/'))
+            .pipe(browserSync.reload({stream: true}));
 });
 
 /** Watch */
