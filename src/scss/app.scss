@@ -6,6 +6,10 @@
 $mainBackground: #000 ;
 $mainForeColor: #fff;
 
+.content{
+    box-shadow: 0.5px 0.5px 2px 2px #888888;
+}
+
 .main-background{
     background: $mainBackground;
     color: $mainForeColor;
