@@ -1,5 +1,12 @@
 
-/**Occuption */
+/** 
+ * 
+ * @class Occupation 
+ * @param company
+ * @param position
+ * @param startDate
+ * @param endDate
+*/
  function Occupation(company, position, startDate, endDate) {
     var self = this;
 

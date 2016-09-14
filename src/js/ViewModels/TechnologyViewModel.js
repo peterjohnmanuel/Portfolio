@@ -1,6 +1,6 @@
 
 /**
- * Summary of tehcnologies used. 
+ * Summary of technologies used. 
  * @class TechnologyViewModel
  */
 function TechnologyViewModel(){
