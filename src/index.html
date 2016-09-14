@@ -11,36 +11,52 @@
 
 <body class="main-background">
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Peter Manuel Portfolio</a>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Peter Manuel Portfolio</a>
+            </div>
+        </div>
+    </nav>
 
     <section class="container content">
 
-        <section class="col-lg-4">
+        <section class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 
             <section class="about">
                 <h4> <em class="fa fa-user"></em> Details</h4>
             </section>
 
+            <hr>
+
             <section class="about">
                 <h4> <em class="fa fa-info-circle"></em> About</h4>
             </section>
 
+            <hr>
+
             <section id="technology" class="technology-stack">
                 <h4> <em class="fa fa-wrench"></em> Technology Stack</h4>
                 <ul class="ul-no-style" data-bind="foreach: technologies">
-                   <li class="li-no-style" data-bind="text: $data"></li> 
+                    <li data-bind="text: $data"></li>
                 </ul>
             </section>
 
-            <section class="work-experiance">
+            <hr>
+
+            <section id="occupation" class="work-experiance">
                 <h4><em class="fa fa-briefcase"></em> Occupational Experience</h4>
+                <ul class="ul-no-style" data-bind="foreach: occupations">
+                    <li>
+                            <span data-bind="text: company"></span>
+                            <span data-bind="text: position"></span>
+                            <span data-bind="text: startDate"></span>
+                            <span data-bind="text: endDate"></span>
+                    </li>
+                </ul>
             </section>
+
+            <hr>
 
             <section class="contact">
                 <h4><em class="fa fa-phone-square"></em> Contact</h4>
@@ -49,7 +65,7 @@
 
         </section>
 
-        <section class="col-lg-8">
+        <section class="col-lg-9">
             <h4 class="projects">Projects</h4>
 
             <hr>
@@ -62,15 +78,35 @@
                     </section>
                 </section>
 
+                <section class="col-xs-6 col-md-3 col-lg-3">
+                    <section class="thumbnail">
+                        <img src="http://placehold.it/200x250">
+                    </section>
+                </section>
+
+                <section class="col-xs-6 col-md-3 col-lg-3">
+                    <section class="thumbnail">
+                        <img src="http://placehold.it/200x250">
+                    </section>
+                </section>
+
+                <section class="col-xs-6 col-md-3 col-lg-3">
+                    <section class="thumbnail">
+                        <img src="http://placehold.it/200x250">
+                    </section>
+                </section>                                                
+
             </section>
         </section>
     </section>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/knockout.min.js"></script>    
+    <script src="js/knockout.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/Model/Technology.js"></script>
+    <script src="js/Model/Occupation.js"></script>
     <script src="js/ViewModels/TechnologyViewModel.js"></script>
+    <script src="js/ViewModels/OccupationViewModel.js"></script>
     <script src="js/app.js"></script>
 
 
