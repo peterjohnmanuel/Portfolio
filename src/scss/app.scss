@@ -4,11 +4,11 @@
 $mainBackground: #000 ;
 $mainForeColor: #fff;
 
-// *{
-//     font-family: 'Times New Roman', Times, serif;
-// }
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
 
-// Box with content detials
+// Box content with content detials
 .content{
     box-shadow: 0.5px 0.5px 2px 2px #888888;
     margin-bottom: 40px;
@@ -37,6 +37,7 @@ $mainForeColor: #fff;
     height: 85px;
 }
 
+// Main Item highlighted in list
 .li-main-item{
     font-weight: bold;
 }
