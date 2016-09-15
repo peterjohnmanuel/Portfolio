@@ -2,26 +2,42 @@
 @import "bootstrap/theme";
 
 
-
 $mainBackground: #000 ;
 $mainForeColor: #fff;
 
+
+// Box with content detials
 .content{
     box-shadow: 0.5px 0.5px 2px 2px #888888;
+    margin-bottom: 40px;
 }
 
+
+// Background color
 .main-background{
     background: $mainBackground;
     color: $mainForeColor;
 }
 
+// style for picture
 .ul-no-style{
 
     padding: 0px;
     padding-left: 25px; 
 
     li{
+        padding-bottom: 10px;
         list-style: none;
         font-size: 15px;
     }
+
+    .li-less-space{
+        padding-bottom: 0px;
+    }
+}
+
+// Picture size
+.profile-picture{
+    width: 85px;
+    height: 85px;
 }

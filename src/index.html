@@ -24,25 +24,26 @@
         <section class="col-lg-3 col-md-12 col-sm-12 col-xs-12 content">
 
             <section id="user" class="about">
-                <h4> <em class="fa fa-user"></em> Details</h4>
-                <span data-bind="text: name"></span>
-                <span data-bind="text: surname"></span>
+                <h4>
+                    <span data-bind="text: name"></span>
+                    <span data-bind="text: surname"></span>
+                </h4>
 
                 <section class="row">
                     <section class="col-md-4">
                         <figure>
                             <picture>
                                 <source class="img-responsive" data-bind="attr: { srcset: profilePicture}" />
-                                <img data-bind=" attr: { src: profilePicture}" alt="Profile Picture">
+                                <img class="profile-picture" data-bind=" attr: { src: profilePicture}" alt="Profile Picture">
                             </picture>
                         </figure>
                     </section>
 
                     <section class="col-md-8">
-                        <p>
-                            <span data-bind="text: designation"></span>                            
-                        </p>
-                        <em class="fa fa-map-marker"></em><span data-bind="text: location"></span>                    
+                            <h4 data-bind="text: designation"></h4>
+                            <section>
+                                <em class="fa fa-map-marker"></em> <span data-bind="text: location"></span>
+                            </section>
                     </section>
                 </section>
             </section>
@@ -52,7 +53,7 @@
             <section id="technology" class="technology-stack">
                 <h4> <em class="fa fa-wrench"></em> Technology Stack</h4>
                 <ul class="ul-no-style" data-bind="foreach: technologies">
-                    <li data-bind="text: $data"></li>
+                    <li data-bind="text: $data" class="li-less-space"></li>
                 </ul>
             </section>
 
@@ -61,11 +62,13 @@
             <section id="occupation" class="work-experiance">
                 <h4><em class="fa fa-briefcase"></em> Occupational Experience</h4>
                 <ul class="ul-no-style" data-bind="foreach: occupations">
-                    <li>
-                        <span data-bind="text: company"></span>
-                        <span data-bind="text: position"></span>
-                        <span data-bind="text: startDate"></span>
-                        <span data-bind="text: endDate"></span>
+                    <li class="">
+
+                        <section data-bind="text: company"></section>
+                        <section data-bind="text: position"></section>
+                        <section>
+                            <span data-bind="text: startDate"></span> - <span data-bind="text: endDate"></span>
+                        </section>
                     </li>
                 </ul>
             </section>
@@ -76,9 +79,8 @@
                 <h4> <em class="fa fa-graduation-cap"></em> Education</h4>
                 <ul class="ul-no-style" data-bind="foreach: education">
                     <li>
-                        <span data-bind="text: school"></span>
-                        <span data-bind="text: qualification"></span>
-                        <span data-bind="text: year"></span>
+                        <section data-bind="text: qualification"></section>
+                        <section><span data-bind="text: school"></span> - <span data-bind="text: year"></span></section>
                     </li>
                 </ul>
             </section>
