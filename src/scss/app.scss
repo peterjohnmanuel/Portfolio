@@ -1,22 +1,17 @@
 @import "bootstrap";
 @import "bootstrap/theme";
 
-
 $mainBackground: #000 ;
 $mainForeColor: #fff;
 
+// *{
+//     font-family: 'Times New Roman', Times, serif;
+// }
 
 // Box with content detials
 .content{
     box-shadow: 0.5px 0.5px 2px 2px #888888;
     margin-bottom: 40px;
-}
-
-
-// Background color
-.main-background{
-    background: $mainBackground;
-    color: $mainForeColor;
 }
 
 // style for picture
@@ -40,4 +35,8 @@ $mainForeColor: #fff;
 .profile-picture{
     width: 85px;
     height: 85px;
+}
+
+.li-main-item{
+    font-weight: bold;
 }

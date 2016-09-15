@@ -6275,10 +6275,6 @@ button.close {
   box-shadow: 0.5px 0.5px 2px 2px #888888;
   margin-bottom: 40px; }
 
-.main-background {
-  background: #000;
-  color: #fff; }
-
 .ul-no-style {
   padding: 0px;
   padding-left: 25px; }
@@ -6292,3 +6288,6 @@ button.close {
 .profile-picture {
   width: 85px;
   height: 85px; }
+
+.li-main-item {
+  font-weight: bold; }
