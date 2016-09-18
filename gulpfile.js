@@ -57,17 +57,43 @@ gulp.task('font', function () {
 
 /**Image */
 gulp.task('image', function () {
-    gulp.src('./src/img/accolades/**/*')
+    gulp.src('./src/img/technologies/**/*')
         .pipe(plumber())
         .pipe(imageResizer({
-            width: 40,            
+            width: 40,
             quality: 100,
             upscale: false,
             progressive: true
         }))
         .pipe(rename(function (path) { path.basename += "_technologies"; }))
         .pipe(imagemin())
-        .pipe(gulp.dest('./src/img/technologies/'));
+        .pipe(gulp.dest('./src/img/technologies/')),
+
+        gulp.src('./src/img/thumbnails/**/*')
+            .pipe(plumber())
+            .pipe(imageResizer({
+                width: 200,
+                height: 250,
+                quality: 250,
+                upscale: true,
+                progressive: true
+            }))
+            .pipe(rename(function (path) { path.basename += "_thumbnail"; }))
+            .pipe(imagemin())
+            .pipe(gulp.dest('./src/img/thumbnails/')),
+
+        gulp.src('./src/img/modals/**/*')
+            .pipe(plumber())
+            .pipe(imageResizer({
+                width: 300,
+                height: 350,
+                quality: 250,
+                upscale: true,
+                progressive: true
+            }))
+            .pipe(rename(function (path) { path.basename += "_modal"; }))
+            .pipe(imagemin())
+            .pipe(gulp.dest('./src/img/modals/'));
 });
 
 

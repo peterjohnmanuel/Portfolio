@@ -112,7 +112,12 @@
                     <section class="col-xs-6 col-md-3 col-lg-3">
 
                         <section class="thumbnail">
-                            <img src="http://placehold.it/200x250" width="200" height="250">
+                            <figure class="center-block">
+                                <picture>
+                                    <img class="img-responsive center-block test" data-bind=" attr: { src: projectPicture.thumbnail}" alt="Project Picture">
+                                </picture>
+                            </figure>
+
                             <a class="text-center" data-toggle="modal" data-target="#project" data-bind="click: $parent.showProject">
                                 <h4 class="text-center" data-bind="text: name"></h4>
                             </a>
@@ -132,8 +137,8 @@
 
                                 <figure class="center-block">
                                     <picture>
-                                        <source class="img-responsive center-block" data-bind="attr: { srcset: projectPicture}" />
-                                        <img class="img-responsive center-block"  data-bind=" attr: { src: projectPicture}" alt="Project Picture">
+                                        <source class="img-responsive center-block" data-bind="attr: { srcset: projectPicture.modal}" />
+                                        <img class="img-responsive center-block" data-bind=" attr: { src: projectPicture.modal}" alt="Project Picture">
                                     </picture>
                                 </figure>
 

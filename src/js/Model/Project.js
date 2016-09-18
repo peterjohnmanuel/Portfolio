@@ -68,6 +68,13 @@ var project1Technologies = [
     },                              
 ];
 
+/**Project1: Pictures */
+var project1pictures = 
+{
+    modal : "", 
+    thumbnail: ""
+};
+
 /** Project 1: Udacity Front End Nano Degree Portfolio */
 var project1Description = `Project 1 of the Udacity Front End Nano Degree Program involved creating 
 a portfolio detailing all of the projects done in the past. During the podcasts of the project technologies such as HTML5, CSS3, Responsive Web Design
@@ -109,6 +116,14 @@ var project3Technologies = [
     },                         
 ];
 
+/**Project 3: Pictures */
+var project3Pictures = 
+{
+    modal : "img/modals/Classic_Arcade_Game_modal.png", 
+    thumbnail: "img/thumbnails/Classic_Arcade_Game_thumbnail.png"
+};
+
+
 /** Project 4: Udacity Front End Nano Degree Website Optimization */
 var project4Description = `Project 4 of the Udacity Front End Nano Degree Program was a bit different to projects that I'm usally use to developing. Rather than focusing on 
 web and application design this project focused on the performance of a website. Using google chrome developer tools, a given solution was analysed and had to be optimizied in order to make the 
@@ -121,6 +136,13 @@ the design patterns were introduced such as MV*, MVC, MVP and MVVM. Later existi
 third party api's. During the neighborhood map project google maps api was required in order to create a map with map markers.     
 `;
 
+/**Project 5: Pictures */
+var project5Pictures = 
+{
+    modal : "img/modals/Neighborhood_Map_modal.png", 
+    thumbnail: "img/thumbnails/Neighborhood_Map_thumbnail.png"
+};
+
 /** Project 6: Udacity Front End Nano Degree Feed Reader */
 var project6Description = `Project 6 of the Udacity Front End Nano Degree Program discussed the importance of testing. During the podcasts the concept of Test Driven Development (TDD)
 was discussed in web development. Using testing to drive the development of your application to make sure you application still works while making changes is important to keep the integrity
@@ -129,9 +151,9 @@ of a working application. Jasmine testing framework was used to write tests in a
 
 var project1 = new Project("Portfolio", project1Description, project1Technologies, "https://github.com/peterjohnmanuel/Portfolio", "");
 var project2 = new Project("Resume", project2Description, "", "https://github.com/peterjohnmanuel/Resume", "");
-var project3 = new Project("Classic Arcade Game", project3Description, project3Technologies, "https://github.com/peterjohnmanuel/ClassicArcadeGame", "img/Classic_Arcade_Game.png");
+var project3 = new Project("Classic Arcade Game", project3Description, project3Technologies, "https://github.com/peterjohnmanuel/ClassicArcadeGame", project3Pictures);
 var project4 = new Project("Web Optimization", project4Description, "", "https://github.com/peterjohnmanuel/Weboptimization", "");
-var project5 = new Project("Neighborhood Map", project5Description, "", "https://github.com/peterjohnmanuel/NeighborhoodMap", "");
+var project5 = new Project("Neighborhood Map", project5Description, "", "https://github.com/peterjohnmanuel/NeighborhoodMap", project5Pictures);
 var project6 = new Project("Feed Reader", project6Description, "", "https://github.com/peterjohnmanuel/Feedreader", "");
 
 var allProjects = [project1, project2, project3, project4, project5, project6];
