@@ -14,7 +14,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Peter Manuel Portfolio</a>
+                <a class="navbar-brand">Peter Manuel Portfolio</a>
             </div>
         </div>
     </nav>
@@ -108,32 +108,45 @@
             <section class="row">
 
 
-                <section class="col-xs-6 col-md-3 col-lg-3" data-bind="foreach: projects">
-                    <section class="thumbnail">
-                        <img src="http://placehold.it/200x250">
-                        <button class="center-block" type="submit">
+                <section data-bind="foreach: projects">
+                    <section class="col-xs-6 col-md-3 col-lg-3">
+                        <section class="thumbnail">
+                            <img src="http://placehold.it/200x250">
+                            <a class="text-center" data-toggle="modal" data-target="#project" data-bind="click: $parent.showProject">
                                 <h4 class="text-center" data-bind="text: name"></h4>
-                        </button>
+                            </a>
+                        </section>
+
                     </section>
                 </section>
 
-                <section class="col-xs-6 col-md-3 col-lg-3">
-                    <section class="thumbnail">
-                        <img src="http://placehold.it/200x250">
-                    </section>
-                </section>
+                <div data-bind="with: selectedProject" class="modal fade" id="project" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" data-bind="text: name"></h4>
+                            </div>
+                            <div class="modal-body">
 
-                <section class="col-xs-6 col-md-3 col-lg-3">
-                    <section class="thumbnail">
-                        <img src="http://placehold.it/200x250">
-                    </section>
-                </section>
+                                </br>
+                                </hr>
+                                <p data-bind="text: description">
+                                </p>
 
-                <section class="col-xs-6 col-md-3 col-lg-3">
-                    <section class="thumbnail">
-                        <img src="http://placehold.it/200x250">
-                    </section>
-                </section>
+                                </br>
+                                </br>
+                                </br>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-default btn-left pull-left" type="button" data-bind="attr: { href: githubLink}">
+                                    <i class="fa fa-2x fa-github"></i> Git Hub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </section>
         </section>
