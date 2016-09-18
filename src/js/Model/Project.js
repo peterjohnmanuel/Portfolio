@@ -204,11 +204,41 @@ was discussed in web development. Using testing to drive the development of your
 of a working application. Jasmine testing framework was used to write tests in an existing application during the application.
 `;
 
+/**Project 6: Pictures */
+var project6Pictures = 
+{
+    modal : "img/modals/Feed_Reader_modal.png", 
+    thumbnail: "img/thumbnails/Feed_Reader_thumbnail.png"
+};
+
+var project6Technologies = [
+
+    {
+        name: "HTML5",
+        img: "img/technologies/html5_technologies.png"
+    },  
+    {
+        name: "Javascipt",
+        img: "img/technologies/javascript_technologies.png"
+    },     
+    {
+        name: "JQuery",
+        img: "img/technologies/jquery_technologies.png"
+    }, 
+    {
+        name: "Jasmine",
+        img: "img/technologies/jasmine_technologies.png"
+    }                       
+];
+
+
+
+
 var project1 = new Project("Portfolio", project1Description, project1Technologies, "https://github.com/peterjohnmanuel/Portfolio", "");
 var project2 = new Project("Resume", project2Description, "", "https://github.com/peterjohnmanuel/Resume", "");
 var project3 = new Project("Classic Arcade Game", project3Description, project3Technologies, "https://github.com/peterjohnmanuel/ClassicArcadeGame", project3Pictures);
 var project4 = new Project("Web Optimization", project4Description, "", "https://github.com/peterjohnmanuel/Weboptimization", "");
 var project5 = new Project("Neighborhood Map", project5Description, project5Technologies, "https://github.com/peterjohnmanuel/NeighborhoodMap", project5Pictures);
-var project6 = new Project("Feed Reader", project6Description, "", "https://github.com/peterjohnmanuel/Feedreader", "");
+var project6 = new Project("Feed Reader", project6Description, project6Technologies, "https://github.com/peterjohnmanuel/Feedreader", project6Pictures);
 
 var allProjects = [project1, project2, project3, project4, project5, project6];
