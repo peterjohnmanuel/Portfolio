@@ -6,9 +6,9 @@
  * @param technologies
  * @param githubLink
  */
-function Project(name, description, technologies, githubLink, projectPicture){
+function Project(name, description, technologies, githubLink, projectPicture) {
 
-var self = this;
+    var self = this;
 
     self.name = name;
     self.description = description;
@@ -16,6 +16,57 @@ var self = this;
     self.githubLink = githubLink;
     self.projectPicture = projectPicture;
 }
+
+/**Project 1: Details */
+
+/**Project 1: Accolades */
+
+var project1Technologies = [
+    {
+        name: "Bootstrap",
+        img: "img/technologies/boostrap_technologies.png"
+    },
+    {
+        name: "Bower",
+        img: "img/technologies/bower_technologies.png"
+    },
+    {
+        name: "CSS3",
+        img: "img/technologies/css3_technologies.png"
+    },
+    {
+        name: "Font Awesome",
+        img: "img/technologies/font-awesome_technologies.png"
+    },
+    {
+        name: "Grunt",
+        img: "img/technologies/grunt_technologies.png"
+    },
+    {
+        name: "Gulp",
+        img: "img/technologies/gulp_technologies.png"
+    },
+    {
+        name: "HTML5",
+        img: "img/technologies/html5_technologies.png"
+    },  
+    {
+        name: "Javascipt",
+        img: "img/technologies/javascript_technologies.png"
+    },     
+    {
+        name: "JQuery",
+        img: "img/technologies/jquery_technologies.png"
+    }, 
+    {
+        name: "Responsive Web Design",
+        img: "img/technologies/rwd_technologies.png"
+    },  
+    {
+        name: "Sass",
+        img: "img/technologies/sass_technologies.png"
+    },                              
+];
 
 /** Project 1: Udacity Front End Nano Degree Portfolio */
 var project1Description = `Project 1 of the Udacity Front End Nano Degree Program involved creating 
@@ -35,6 +86,29 @@ used in order to create a small HTML game. Concepts such as inheritance was intr
 podcasts the benifits of readme's was also discussed and how it can help other developers get started using you projects.
 `;
 
+var project3Technologies = [
+    {
+        name: "Bootstrap",
+        img: "img/technologies/boostrap_technologies.png"
+    },
+    {
+        name: "CSS3",
+        img: "img/technologies/css3_technologies.png"
+    },
+    {
+        name: "Gulp",
+        img: "img/technologies/gulp_technologies.png"
+    },
+    {
+        name: "HTML5",
+        img: "img/technologies/html5_technologies.png"
+    },  
+    {
+        name: "Javascipt",
+        img: "img/technologies/javascript_technologies.png"
+    },                         
+];
+
 /** Project 4: Udacity Front End Nano Degree Website Optimization */
 var project4Description = `Project 4 of the Udacity Front End Nano Degree Program was a bit different to projects that I'm usally use to developing. Rather than focusing on 
 web and application design this project focused on the performance of a website. Using google chrome developer tools, a given solution was analysed and had to be optimizied in order to make the 
@@ -53,11 +127,11 @@ was discussed in web development. Using testing to drive the development of your
 of a working application. Jasmine testing framework was used to write tests in an existing application during the application.
 `;
 
-var project1 = new Project("Portfolio", project1Description, "" , "https://github.com/peterjohnmanuel/Portfolio", "");
-var project2 = new Project("Resume", project2Description , "" , "https://github.com/peterjohnmanuel/Resume" ,"");
-var project3 = new Project("Classic Arcade Game", project3Description, "", "https://github.com/peterjohnmanuel/ClassicArcadeGame" ,"img/Classic_Arcade_Game.png");
-var project4 = new Project("Web Optimization", project4Description, "", "https://github.com/peterjohnmanuel/Weboptimization" , "");
-var project5 = new Project("Neighborhood Map", project5Description, "", "https://github.com/peterjohnmanuel/NeighborhoodMap" , "");
-var project6 = new Project("Feed Reader", project6Description, "", "https://github.com/peterjohnmanuel/Feedreader", "" );
+var project1 = new Project("Portfolio", project1Description, project1Technologies, "https://github.com/peterjohnmanuel/Portfolio", "");
+var project2 = new Project("Resume", project2Description, "", "https://github.com/peterjohnmanuel/Resume", "");
+var project3 = new Project("Classic Arcade Game", project3Description, project3Technologies, "https://github.com/peterjohnmanuel/ClassicArcadeGame", "img/Classic_Arcade_Game.png");
+var project4 = new Project("Web Optimization", project4Description, "", "https://github.com/peterjohnmanuel/Weboptimization", "");
+var project5 = new Project("Neighborhood Map", project5Description, "", "https://github.com/peterjohnmanuel/NeighborhoodMap", "");
+var project6 = new Project("Feed Reader", project6Description, "", "https://github.com/peterjohnmanuel/Feedreader", "");
 
 var allProjects = [project1, project2, project3, project4, project5, project6];

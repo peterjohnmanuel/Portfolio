@@ -6295,6 +6295,10 @@ button.close {
 .li-main-item {
   font-weight: bold; }
 
-.project-picture-thumbnail {
-  max-width: 200px;
-  height: 250px; }
+.technologies {
+  margin-top: 60px; }
+
+.technology {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block; }

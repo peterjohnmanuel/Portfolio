@@ -4,6 +4,10 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
 var fontmin = require('gulp-fontmin');
+var imageResizer = require('gulp-image-resize');
+var imagemin = require('gulp-imagemin');
+var rename = require("gulp-rename");
+
 
 var browserSync = require('browser-sync').create();
 
@@ -15,22 +19,23 @@ var directories = {
     cssDir: 'css/',
     distDir: './dist/',
     fontDir: './bower_components/font-awesome',
+    imgDir: 'img/**/*',
     sassDir: 'scss/**/*.scss'
 };
 
 /** Sass  */
-gulp.task('sass', function(){
+gulp.task('sass', function () {
     gulp.src(directories.baseDir + directories.sassDir)
-    .pipe(plumber())
-    .pipe(sass({ includePaths: [directories.bootstrapDir + 'assets/stylesheets'] }))
-    .pipe(gulp.dest(directories.baseDir + directories.cssDir))
-    .pipe(browserSync.reload({stream: true}));
+        .pipe(plumber())
+        .pipe(sass({ includePaths: [directories.bootstrapDir + 'assets/stylesheets'] }))
+        .pipe(gulp.dest(directories.baseDir + directories.cssDir))
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 /** Browser Sync */
-gulp.task('browser-sync', function(){
+gulp.task('browser-sync', function () {
     browserSync.init({
-        server : { 
+        server: {
             baseDir: directories.baseDirectory
         }
     });
@@ -42,20 +47,36 @@ gulp.task('font', function () {
         .pipe(fontmin())
         .pipe(gulp.dest('fonts'))
         .pipe(gulp.dest(directories.baseDir + 'fonts/'))
-        .pipe(browserSync.reload({stream: true}));
-        gulp.src(directories.fontDir + '/fonts/**/*')
-            .pipe(fontmin())
-            .pipe(gulp.dest('fonts'))
-            .pipe(gulp.dest(directories.baseDir + 'fonts/'))
-            .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({ stream: true }));
+    gulp.src(directories.fontDir + '/fonts/**/*')
+        .pipe(fontmin())
+        .pipe(gulp.dest('fonts'))
+        .pipe(gulp.dest(directories.baseDir + 'fonts/'))
+        .pipe(browserSync.reload({ stream: true }));
 });
 
+/**Image */
+gulp.task('image', function () {
+    gulp.src('./src/img/accolades/**/*')
+        .pipe(plumber())
+        .pipe(imageResizer({
+            width: 40,            
+            quality: 100,
+            upscale: false,
+            progressive: true
+        }))
+        .pipe(rename(function (path) { path.basename += "_technologies"; }))
+        .pipe(imagemin())
+        .pipe(gulp.dest('./src/img/technologies/'));
+});
+
+
 /** Watch */
-gulp.task('watch', ['browser-sync'], function(){
+gulp.task('watch', ['browser-sync'], function () {
 
     gulp.watch("./src/scss/*.scss", ['sass']);
     gulp.watch("./src/*.html").on('change', browserSync.reload);
-     gulp.watch("./src/js/**/*.js").on('change', browserSync.reload);
+    gulp.watch("./src/js/**/*.js").on('change', browserSync.reload);
 
 });
 

@@ -42,8 +42,14 @@ $mainForeColor: #fff;
     font-weight: bold;
 }
 
-// Project thumbnail
-.project-picture-thumbnail{
-    max-width: 200px;
-    height: 250px;
+// Technologies section
+.technologies{
+    margin-top: 60px;
+}
+
+// Project technology
+.technology{
+    margin-left: 10px;
+    margin-right: 10px;     
+    display: inline-block;
 }
