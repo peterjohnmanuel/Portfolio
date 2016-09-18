@@ -136,6 +136,61 @@ the design patterns were introduced such as MV*, MVC, MVP and MVVM. Later existi
 third party api's. During the neighborhood map project google maps api was required in order to create a map with map markers.     
 `;
 
+var project5Technologies = [
+    {
+        name: "Bootstrap",
+        img: "img/technologies/boostrap_technologies.png"
+    },
+    {
+        name: "Bower",
+        img: "img/technologies/bower_technologies.png"
+    },
+    {
+        name: "CSS3",
+        img: "img/technologies/css3_technologies.png"
+    },
+    {
+        name: "Font Awesome",
+        img: "img/technologies/font-awesome_technologies.png"
+    },
+    {
+        name: "Gulp",
+        img: "img/technologies/gulp_technologies.png"
+    },
+    {
+        name: "HTML5",
+        img: "img/technologies/html5_technologies.png"
+    },  
+    {
+        name: "Javascipt",
+        img: "img/technologies/javascript_technologies.png"
+    },     
+    {
+        name: "JQuery",
+        img: "img/technologies/jquery_technologies.png"
+    }, 
+    {
+        name: "Knockout JS",
+        img: "img/technologies/knockout_technologies.png"
+    },     
+    {
+        name: "Responsive Web Design",
+        img: "img/technologies/rwd_technologies.png"
+    },  
+    {
+        name: "Sass",
+        img: "img/technologies/sass_technologies.png"
+    },                              
+];
+
+/**Project 3: Pictures */
+var project3Pictures = 
+{
+    modal : "img/modals/Classic_Arcade_Game_modal.png", 
+    thumbnail: "img/thumbnails/Classic_Arcade_Game_thumbnail.png"
+};
+
+
 /**Project 5: Pictures */
 var project5Pictures = 
 {
@@ -153,7 +208,7 @@ var project1 = new Project("Portfolio", project1Description, project1Technologie
 var project2 = new Project("Resume", project2Description, "", "https://github.com/peterjohnmanuel/Resume", "");
 var project3 = new Project("Classic Arcade Game", project3Description, project3Technologies, "https://github.com/peterjohnmanuel/ClassicArcadeGame", project3Pictures);
 var project4 = new Project("Web Optimization", project4Description, "", "https://github.com/peterjohnmanuel/Weboptimization", "");
-var project5 = new Project("Neighborhood Map", project5Description, "", "https://github.com/peterjohnmanuel/NeighborhoodMap", project5Pictures);
+var project5 = new Project("Neighborhood Map", project5Description, project5Technologies, "https://github.com/peterjohnmanuel/NeighborhoodMap", project5Pictures);
 var project6 = new Project("Feed Reader", project6Description, "", "https://github.com/peterjohnmanuel/Feedreader", "");
 
 var allProjects = [project1, project2, project3, project4, project5, project6];
