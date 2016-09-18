@@ -110,8 +110,9 @@
 
                 <section data-bind="foreach: projects">
                     <section class="col-xs-6 col-md-3 col-lg-3">
+                        
                         <section class="thumbnail">
-                            <img src="http://placehold.it/200x250">
+                            <img src="http://placehold.it/200x250" width="200" height="250">
                             <a class="text-center" data-toggle="modal" data-target="#project" data-bind="click: $parent.showProject">
                                 <h4 class="text-center" data-bind="text: name"></h4>
                             </a>
@@ -128,6 +129,13 @@
                                 <h4 class="modal-title" data-bind="text: name"></h4>
                             </div>
                             <div class="modal-body">
+
+                                <figure class="img-responsive">
+                                    <picture>
+                                        <source class="img-responsive" data-bind="attr: { srcset: projectPicture}" />
+                                        <img class="project-picture" data-bind=" attr: { src: projectPicture}" alt="Project Picture">
+                                    </picture>
+                                </figure>
 
                                 </br>
                                 </hr>

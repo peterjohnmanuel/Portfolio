@@ -6,7 +6,7 @@
  * @param technologies
  * @param githubLink
  */
-function Project(name, description, technologies, githubLink){
+function Project(name, description, technologies, githubLink, projectPicture){
 
 var self = this;
 
@@ -14,6 +14,7 @@ var self = this;
     self.description = description;
     self.technologies = technologies;
     self.githubLink = githubLink;
+    self.projectPicture = projectPicture;
 }
 
 /** Project 1: Udacity Front End Nano Degree Portfolio */
@@ -52,11 +53,11 @@ was discussed in web development. Using testing to drive the development of your
 of a working application. Jasmine testing framework was used to write tests in an existing application during the application.
 `;
 
-var project1 = new Project("Portfolio", project1Description, "" , "https://github.com/peterjohnmanuel/Portfolio");
-var project2 = new Project("Resume", project2Description , "" , "https://github.com/peterjohnmanuel/Resume");
-var project3 = new Project("Classic Arcade Game", project3Description, "", "https://github.com/peterjohnmanuel/ClassicArcadeGame");
-var project4 = new Project("Web Optimization", project4Description, "", "https://github.com/peterjohnmanuel/Weboptimization");
-var project5 = new Project("Neighborhood Map", project5Description, "", "https://github.com/peterjohnmanuel/NeighborhoodMap");
-var project6 = new Project("Feed Reader", project6Description, "", "https://github.com/peterjohnmanuel/Feedreader" );
+var project1 = new Project("Portfolio", project1Description, "" , "https://github.com/peterjohnmanuel/Portfolio", "");
+var project2 = new Project("Resume", project2Description , "" , "https://github.com/peterjohnmanuel/Resume" ,"");
+var project3 = new Project("Classic Arcade Game", project3Description, "", "https://github.com/peterjohnmanuel/ClassicArcadeGame" ,"img/Classic_Arcade_Game.png");
+var project4 = new Project("Web Optimization", project4Description, "", "https://github.com/peterjohnmanuel/Weboptimization" , "");
+var project5 = new Project("Neighborhood Map", project5Description, "", "https://github.com/peterjohnmanuel/NeighborhoodMap" , "");
+var project6 = new Project("Feed Reader", project6Description, "", "https://github.com/peterjohnmanuel/Feedreader", "" );
 
 var allProjects = [project1, project2, project3, project4, project5, project6];

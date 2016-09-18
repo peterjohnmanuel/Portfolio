@@ -6294,3 +6294,7 @@ button.close {
 
 .li-main-item {
   font-weight: bold; }
+
+.project-picture-thumbnail {
+  max-width: 200px;
+  height: 250px; }
