@@ -19,9 +19,11 @@
         </div>
     </nav>
 
-    <section class="container">
+    <section class="container-fluid">
 
-        <section class="col-lg-3 col-md-12 col-sm-12 col-xs-12 content">
+        <section class="col-md-1">            
+        </section>
+        <section class="col-lg-3 col-md-3 col-sm-12 col-xs-12 content">
 
             <section id="user" class="about">
                 <h4>
@@ -100,7 +102,7 @@
 
         </section>
 
-        <section id="projects" class="col-lg-9">
+        <section id="projects" class="col-lg-7">
             <h3 class="projects">Projects</h3>
 
             <hr>
@@ -152,9 +154,9 @@
                                     </hr>
 
                                     <section data-bind="foreach: technologies">
-                                        <picture class="technology" data-toggle="tooltip" data-placement="top" title="HTML 5" data-bind="attr: {title: name}">
+                                        <picture class="technology" data-toggle="tooltip" data-placement="top" data-bind="attr: {title: name}">
                                             <source data-bind="attr: { srcset: img}" media="(min-width: 401px)" />
-                                            <img data-bind=" attr: { src: img, alt: name}" class="img-responsive" alt="HTML 5">
+                                            <img data-bind=" attr: { src: img, alt: name}" class="img-responsive" >
                                         </picture>
                                     </section>
 
@@ -173,11 +175,15 @@
 
             </section>
         </section>
+
+        <section class="col-md-1">            
+        </section>
     </section>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/knockout.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/technologylist.js"></script>
     <script src="js/Model/Technology.js"></script>
     <script src="js/Model/Occupation.js"></script>
     <script src="js/Model/Detail.js"></script>

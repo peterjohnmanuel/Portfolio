@@ -11,6 +11,7 @@
   "devDependencies": {
     "browser-sync": "^2.15.0",
     "clean-bower-installer": "^0.3.4",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-fontmin": "^0.7.4",
     "gulp-gm": "0.0.8",
