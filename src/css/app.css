@@ -6318,3 +6318,7 @@ button.close {
 @media (min-width: 768px) {
   .navbar {
     border-radius: 0px; } }
+
+.date-text {
+  color: #888888;
+  font-style: italic; }

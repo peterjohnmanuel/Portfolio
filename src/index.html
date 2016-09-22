@@ -21,13 +21,17 @@
 
     <section class="container-fluid">
 
-        <section class="col-md-1">            
+        <section class="col-md-1">
         </section>
         <section class="col-lg-3 col-md-3 col-sm-12 col-xs-12 content">
 
             <section id="user" class="about">
+
                 <h4 class="heading-color">
-                    <em class="fa fa-user"></em>
+                    <span class="fa-stack fa-lg">                        
+                        <em class="fa fa-circle fa-stack-2x"></em>
+                        <em class="fa fa-user fa-stack-1x fa-inverse"></em>
+                    </span>
                     <span data-bind="text: name"></span>
                     <span data-bind="text: surname"></span>
                 </h4>
@@ -54,7 +58,12 @@
             <hr>
 
             <section id="technology" class="technology-stack">
-                <h4 class="heading-color"> <em class="fa fa-wrench"></em> Summarized Skills</h4>
+                <h4 class="heading-color">
+                    <span class="fa-stack fa-lg">                        
+                        <em class="fa fa-circle fa-stack-2x"></em>
+                        <em class="fa fa-wrench fa-stack-1x  fa-inverse"></em>
+                    </span> Summarized Skills
+                </h4>
                 <ul class="ul-no-style" data-bind="foreach: technologies">
                     <li data-bind="text: $data" class="li-less-space"></li>
                 </ul>
@@ -63,14 +72,19 @@
             <hr>
 
             <section id="occupation" class="work-experiance">
-                <h4 class="heading-color"><em class="fa fa-briefcase"></em> Occupational Experience</h4>
+                <h4 class="heading-color">
+                    <span class="fa-stack fa-lg">                        
+                        <em class="fa fa-circle fa-stack-2x"></em>
+                        <em class="fa fa-briefcase fa-stack-1x fa-inverse"></em>
+                    </span> Occupational Experience
+                </h4>
                 <ul class="ul-no-style" data-bind="foreach: occupations">
-                    <li class="">
+                    <li>
 
                         <section class="li-main-item" data-bind="text: company"></section>
                         <section data-bind="text: position"></section>
                         <section>
-                            <span data-bind="text: startDate"></span> - <span data-bind="text: endDate"></span>
+                            <span class="date-text" data-bind="text: startDate"></span> - <span data-bind="text: endDate"></span>
                         </section>
                     </li>
                 </ul>
@@ -79,11 +93,19 @@
             <hr>
 
             <section id="education" class="education">
-                <h4 class="heading-color"> <em class="fa fa-graduation-cap"></em> Education</h4>
+                <h4 class="heading-color">
+                    <span class="fa-stack fa-lg">                        
+                        <em class="fa fa-circle fa-stack-2x"></em>
+                        <em class="fa fa-graduation-cap fa-stack-1x fa-inverse"></em>
+                    </span> Education
+                </h4>
                 <ul class="ul-no-style" data-bind="foreach: education">
                     <li>
-                        <section class="li-main-item" data-bind="text: qualification"></section>
-                        <section><span data-bind="text: school"></span> - <span data-bind="text: year"></span></section>
+                        <section class="li-main-item">
+                            <span data-bind="text: school"></span> -
+                            <span data-bind="text: qualification"></span>
+                        </section>
+                        <section><span class="date-text" data-bind="text: year"></span></section>
                     </li>
                 </ul>
             </section>
@@ -92,7 +114,13 @@
             <hr>
 
             <section id="contact" class="contact">
-                <h4 class="heading-color"><em class="fa fa-phone-square"></em> Contact</h4>
+
+                <h4 class="heading-color">
+                    <span class="fa-stack fa-lg">                        
+                        <em class="fa fa-circle fa-stack-2x"></em>
+                        <em class="fa fa-phone-square fa-stack-1x fa-inverse"></em>
+                    </span> Contact
+                </h4>
                 <ul class="ul-no-style" data-bind="foreach: contacts">
                     <li>
                         <section data-bind="text: contactDetail"></section>
@@ -157,7 +185,7 @@
                                     <section data-bind="foreach: technologies">
                                         <picture class="technology" data-toggle="tooltip" data-placement="top" data-bind="attr: {title: name}">
                                             <source data-bind="attr: { srcset: img}" media="(min-width: 401px)" />
-                                            <img data-bind=" attr: { src: img, alt: name}" class="img-responsive" >
+                                            <img data-bind=" attr: { src: img, alt: name}" class="img-responsive">
                                         </picture>
                                     </section>
 
@@ -177,7 +205,7 @@
             </section>
         </section>
 
-        <section class="col-md-1">            
+        <section class="col-md-1">
         </section>
     </section>
 
