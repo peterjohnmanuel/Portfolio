@@ -4,9 +4,7 @@
 $mainBackground: #000 ;
 $mainForeColor: #fff;
 
-*{
-    font-family: 'Times New Roman', Times, serif;
-}
+$mainColor: #236b8e;
 
 // Box content with content detials
 .content{
@@ -57,4 +55,26 @@ $mainForeColor: #fff;
 .test{
     height: 200px;
     width: 200px;
+}
+
+.heading-color{
+    color: $mainColor;
+}
+
+.navbar {
+    background: $mainColor;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 0px;
+    
+
+    .navbar-brand{
+        color: #ffffff;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar {
+        border-radius: 0px; 
+    }
 }
