@@ -6322,3 +6322,8 @@ button.close {
 .date-text {
   color: #888888;
   font-style: italic; }
+
+.projects {
+  box-shadow: 0.5px 0.5px 2px 2px #888888;
+  margin-bottom: 40px;
+  margin-left: 15px; }
