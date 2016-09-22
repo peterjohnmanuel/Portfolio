@@ -6286,8 +6286,8 @@ button.close {
     padding-bottom: 0px; }
 
 .profile-picture {
-  width: 85px;
-  height: 85px; }
+  width: 125px;
+  height: 125px; }
 
 .li-main-item {
   font-weight: bold; }
@@ -6300,9 +6300,9 @@ button.close {
   margin-right: 10px;
   display: inline-block; }
 
-.test {
-  height: 200px;
-  width: 200px; }
+.thumbnail-size {
+  height: 225px;
+  width: 225px; }
 
 .heading-color {
   color: #236b8e; }

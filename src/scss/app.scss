@@ -31,8 +31,8 @@ $mainColor: #236b8e;
 
 // Picture size
 .profile-picture{
-    width: 85px;
-    height: 85px;
+    width: 125px;
+    height: 125px;
 }
 
 // Main Item highlighted in list
@@ -52,38 +52,43 @@ $mainColor: #236b8e;
     display: inline-block;
 }
 
-.test{
-    height: 200px;
-    width: 200px;
+// Thumbnail picture size
+.thumbnail-size{
+    height: 225px;
+    width: 225px;
 }
 
+// Main Heading color
 .heading-color{
     color: $mainColor;
 }
 
+// Top navigation bar
 .navbar {
     background: $mainColor;
     color: #ffffff;
     border: 0px;
     border-radius: 0px;
     
-
     .navbar-brand{
         color: #ffffff;
     }
 }
 
+// Top navigation flat
 @media (min-width: 768px){
     .navbar {
         border-radius: 0px; 
     }
 }
 
+// Date Text
 .date-text{
     color: #888888;
     font-style: italic;
 }
 
+// Projects container
 .projects{
     box-shadow: 0.5px 0.5px 2px 2px #888888;
     margin-bottom: 40px;

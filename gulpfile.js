@@ -77,11 +77,9 @@ gulp.task('image', ['deleteImages'], function () {
         gulp.src(path.src + path.img + '/img_base/project_pictures/**/*')
             .pipe(plumber())
             .pipe(imageResizer({
-                width: 200,
-                height: 250,
-                quality: 100,
-                upscale: false,
-                progressive: true
+                width: 300,
+                height: 300,
+                quality: 100,           
             }))
             .pipe(rename(function (path) { path.basename += "_thumbnail"; }))
             .pipe(imagemin())
@@ -91,8 +89,8 @@ gulp.task('image', ['deleteImages'], function () {
         gulp.src(path.src + path.img + '/img_base/project_pictures/**/*')
             .pipe(plumber())
             .pipe(imageResizer({
-                width: 300,
-                height: 350,
+                width: 450,
+                height: 380,
                 quality: 100,
                 upscale: false,
                 progressive: true
@@ -104,7 +102,6 @@ gulp.task('image', ['deleteImages'], function () {
 
 
 /** Delete Images */
-
 gulp.task('deleteImages', function () {
     del(path.src + path.img + 'technologies/**/*');
     del(path.src + path.img + 'modals/**/*');
@@ -114,11 +111,9 @@ gulp.task('deleteImages', function () {
 
 /** Watch */
 gulp.task('watch', ['browser-sync'], function () {
-
     gulp.watch("./src/scss/*.scss", ['sass']);
     gulp.watch("./src/*.html").on('change', browserSync.reload);
     gulp.watch("./src/js/**/*.js").on('change', browserSync.reload);
-
 });
 
 gulp.task('default', ['browser-sync']);
