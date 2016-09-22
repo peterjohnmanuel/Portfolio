@@ -6327,3 +6327,6 @@ button.close {
   box-shadow: 0.5px 0.5px 2px 2px #888888;
   margin-bottom: 40px;
   margin-left: 15px; }
+
+.detail-pane {
+  margin-left: 20px; }
