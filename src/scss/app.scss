@@ -99,3 +99,23 @@ $mainColor: #236b8e;
 .detail-pane{
     margin-left: 20px;
 }
+
+// Footer 
+footer
+{
+    position: absoulte;    
+    bottom: 0;    
+    width: 100%;
+    background-color: $mainColor;
+    color :white;    
+    font-weight: bold;
+    margin-top: 25px; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .footer-text{
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}

@@ -27,8 +27,8 @@ a portfolio detailing all of the projects done in the past. During the podcasts 
 /**Project1: Pictures */
 var project1Pictures =
     {
-        modal: "",
-        thumbnail: ""
+        modal: "img/modals/Portfolio_modal.png",
+        thumbnail: "img/thumbnails/Portfolio_thumbnail.png"
     };
 
 /**Project 1: Technologies */
@@ -49,7 +49,8 @@ var project2Pictures =
     };
 
 /** Project 2: Technologies */
-var project2Technologies = [];
+var project2Technologies = [technologyList.bootstrap, technologyList.bower, technologyList.css3, technologyList.fontAwesome, technologyList.gulp, technologyList.html5,
+    technologyList.javascript, technologyList.jQuery, technologyList.responsiveWebDesign, technologyList.sass];
 
 
 /** Project 3: Udacity Front End Nano Degree HTML5 Game */
@@ -104,8 +105,8 @@ var project5Technologies = [technologyList.bootstrap, technologyList.bower, tech
 
 /** Project 6: Udacity Front End Nano Degree Feed Reader */
 var project6Description = `Project 6 of the Udacity Front End Nano Degree Program discussed the importance of testing. During the podcasts the concept of Test Driven Development (TDD)
-was discussed in web development. Using testing to drive the development of your application to make sure you application still works while making changes is important to keep the integrity
-of a working application. Jasmine testing framework was used to write tests in an existing application during the application.
+was discussed in web development. Using testing to drive the development of the application to make sure you application still works while making changes is important to keep the integrity
+of a working application. Jasmine testing framework was used to write tests in an existing application during this project.
 `;
 
 /**Project 6: Pictures */
