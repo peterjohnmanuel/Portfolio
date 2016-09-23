@@ -7,11 +7,14 @@ var fontmin = require('gulp-fontmin');
 var imageResizer = require('gulp-image-resize');
 var imagemin = require('gulp-imagemin');
 var rename = require("gulp-rename");
+var gulpIf = require('gulp-if');
+var minifyCSS = require('gulp-clean-css');
+var uglify = require('gulp-uglify');
+var useref = require('gulp-useref');
+var babel = require('gulp-babel');
 var del = require('del');
 
-
 var browserSync = require('browser-sync').create();
-
 
 /** Directories */
 var path = {
@@ -20,6 +23,7 @@ var path = {
     css: 'css/',
     dist: './dist/',
     font: './bower_components/font-awesome',
+    fonts: 'fonts/',
     img: 'img/',
     sass: 'scss/**/*.scss',
     src: './src/'
@@ -38,7 +42,7 @@ gulp.task('sass', function () {
 gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
-            baseDir: path.base
+            baseDir: path.src
         }
     });
 });
@@ -57,6 +61,11 @@ gulp.task('browser-sync', function () {
 //         .pipe(browserSync.reload({ stream: true }));
 // });
 
+gulp.task('fonts', function () {
+    return gulp.src(path.src + path.fonts + '**/*')
+        .pipe(gulp.dest(path.dist + path.fonts));
+});
+
 /**Image */
 gulp.task('image', ['deleteImages'], function () {
 
@@ -73,13 +82,13 @@ gulp.task('image', ['deleteImages'], function () {
         .pipe(imagemin())
         .pipe(gulp.dest(path.src + path.img + '/technologies/')),
 
-        /** Thumbnails */ 
+        /** Thumbnails */
         gulp.src(path.src + path.img + '/img_base/project_pictures/**/*')
             .pipe(plumber())
             .pipe(imageResizer({
                 width: 300,
                 height: 300,
-                quality: 100,           
+                quality: 100,
             }))
             .pipe(rename(function (path) { path.basename += "_thumbnail"; }))
             .pipe(imagemin())
@@ -115,5 +124,33 @@ gulp.task('watch', ['browser-sync'], function () {
     gulp.watch("./src/*.html").on('change', browserSync.reload);
     gulp.watch("./src/js/**/*.js").on('change', browserSync.reload);
 });
+
+/** Delete Task */
+gulp.task('delete', function () {
+   del(path.dist + '**/*');
+});
+
+/** Useref Task */
+gulp.task('useref', function () {
+    gulp.src(path.src + '*.html')
+        .pipe(useref())
+        //.pipe(babel())
+        //.pipe(gulpIf('*.js', uglify()))
+        .pipe(gulpIf('*.css', minifyCSS()))
+        .pipe(gulp.dest(path.dist));
+});
+
+/** Images Prod */
+gulp.task('prod-image', function () {
+    gulp.src(['!' + path.src + path.img + '{img_base,img_base/**}' , '!' + path.src + path.img + 'fry-Logo.jpg', path.src + path.img + '**/*',])
+        .pipe(gulp.dest(path.dist + path.img));
+
+});
+//+ path.src + path.img + 'img_base/**/*.*'
+gulp.task('prod', ['delete', 'prod-image', 'useref', 'fonts'], function(){
+
+});
+//gulp.task('prod', ['delete-dist']);
+//gulp.task('prod', ['delete', 'prod-image']);
 
 gulp.task('default', ['browser-sync']);
