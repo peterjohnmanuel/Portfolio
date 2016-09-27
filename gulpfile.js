@@ -9,11 +9,13 @@ var imagemin = require('gulp-imagemin');
 var rename = require("gulp-rename");
 var gulpIf = require('gulp-if');
 var minifyCSS = require('gulp-clean-css');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify/minifier');
 var useref = require('gulp-useref');
 var babel = require('gulp-babel');
 var del = require('del');
 
+var pump = require('pump');
+var uglifyjs = require('uglify-js-harmony')
 var browserSync = require('browser-sync').create();
 
 /** Directories */
@@ -127,27 +129,29 @@ gulp.task('watch', ['browser-sync'], function () {
 
 /** Delete Task */
 gulp.task('delete', function () {
-   del(path.dist + '**/*');
+    del(path.dist + '**/*');
 });
 
 /** Useref Task */
 gulp.task('useref', function () {
     gulp.src(path.src + '*.html')
         .pipe(useref())
-        //.pipe(babel())
-        //.pipe(gulpIf('*.js', uglify()))
+        // .pipe(babel({
+        //     presets: ['es2015']
+        // }))
+        //.pipe(gulpIf('*.js', uglify({ preserveComments: 'license' }, uglifyjs)))
         .pipe(gulpIf('*.css', minifyCSS()))
         .pipe(gulp.dest(path.dist));
 });
 
 /** Images Prod */
 gulp.task('prod-image', function () {
-    gulp.src(['!' + path.src + path.img + '{img_base,img_base/**}' , '!' + path.src + path.img + 'fry-Logo.jpg', path.src + path.img + '**/*',])
+    gulp.src(['!' + path.src + path.img + '{img_base,img_base/**}', '!' + path.src + path.img + 'fry-Logo.jpg', path.src + path.img + '**/*',])
         .pipe(gulp.dest(path.dist + path.img));
 
 });
 //+ path.src + path.img + 'img_base/**/*.*'
-gulp.task('prod', ['delete', 'prod-image', 'useref', 'fonts'], function(){
+gulp.task('prod', ['delete', 'useref', 'fonts'], function () {
 
 });
 //gulp.task('prod', ['delete-dist']);
