@@ -14,8 +14,8 @@ var useref = require('gulp-useref');
 var babel = require('gulp-babel');
 var del = require('del');
 
-var pump = require('pump');
-var uglifyjs = require('uglify-js-harmony')
+//var pump = require('pump');
+var uglifyjs = require('uglify-js-harmony');
 var browserSync = require('browser-sync').create();
 
 /** Directories */
