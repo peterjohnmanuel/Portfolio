@@ -17,4 +17,4 @@ function Detail(name, surname, designation, location) {
     self.location = location;
 }
 
-var personalDetails = new Detail("Peter John", "Manuel", "Developer", "Cape Town, RSA");
+var personalDetails = new Detail("Peter John", "Manuel", "Software Developer", "Cape Town, RSA");
