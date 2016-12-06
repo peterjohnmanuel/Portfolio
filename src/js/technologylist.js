@@ -1,68 +1,87 @@
 var technologyList = {
 
+    "apache": {
+        name: "Apache",
+        img: "img/logos/apache_logo.png"
+    },
+
     "bootstrap": {
         name: "Bootstrap",
-        img: "img/technologies/boostrap_technologies.png"
+        img: "img/logos/bootstrap_logo.png"
     },
 
     "bower": {
         name: "Bower",
-        img: "img/technologies/bower_technologies.png"
+        img: "img/logos/bower_logo.png"
     },
 
     "css3": {
         name: "CSS3",
-        img: "img/technologies/css3_technologies.png"
+        img: "img/logos/css3_logo.png"
     },
 
     "fontAwesome": {
         name: "Font Awesome",
-        img: "img/technologies/font-awesome_technologies.png"
+        img: "img/logos/font-awesome_logo.png"
+    },
 
+    "git": {
+        name: "Git",
+        img: "img/logos/git_logo.png"        
+    },
+
+    "googleMaps": {
+        name: "Google Maps",
+        img: "img/logos/google_maps.png"
     },
 
     "grunt": {
         name: "Grunt",
-        img: "img/technologies/grunt_technologies.png"
+        img: "img/logos/grunt_logo.png"
     },
 
     "gulp": {
         name: "Gulp",
-        img: "img/technologies/gulp_technologies.png"
+        img: "img/logos/gulp_logo.png"
     },
 
     "html5": {
         name: "HTML5",
-        img: "img/technologies/html5_technologies.png"
+        img: "img/logos/html5_logo.png"
     },
 
     "jasmine": {
         name: "Jasmine",
-        img: "img/technologies/jasmine_technologies.png"
+        img: "img/logos/jasmine_logo.png"
     },
 
     "javascript": {
         name: "Javascript",
-        img: "img/technologies/javascript_technologies.png"
+        img: "img/logos/javascript_logo.png"
     },
 
     "jQuery": {
         name: "JQuery",
-        img: "img/technologies/jquery_technologies.png"
+        img: "img/logos/jquery_logo.png"
     },
 
     "knockout": {    
         name: "Knockout JS",
-        img: "img/technologies/knockout_technologies.png"    
+        img: "img/logos/knockout_logo.png"    
+    },
+
+    "raspberryPi": {
+        name: "Raspberry Pi",
+        img: "img/logos/raspberry_pi_logo"
     },
 
     "responsiveWebDesign": {
         name: "Responsive Web Design",
-        img: "img/technologies/rwd_technologies.png"
+        img: "img/logos/rwd_logo.png"
     },
 
     "sass": {
         name: "Sass",
-        img: "img/technologies/sass_technologies.png"
+        img: "img/logos/sass_logo.png"
     }
 };
