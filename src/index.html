@@ -11,159 +11,35 @@
     <!--endbuild-->
 </head>
 
-<body class="main-background">
-
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand">Peter Manuel Portfolio</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="container-fluid">
-
-        <section class="col-md-1">
-        </section>
-        <section class="col-lg-3 col-md-3 col-sm-12 col-xs-12 content">
-
-            <section id="user" class="about">
-
-                <h4 class="heading-color">
-                    <span class="fa-stack fa-lg">                        
-                        <em class="fa fa-circle fa-stack-2x"></em>
-                        <em class="fa fa-user fa-stack-1x fa-inverse"></em>
-                    </span>
-                    <span data-bind="text: name"></span>
-                    <span data-bind="text: surname"></span>
-                </h4>
-
-                <section class="row">
-                    <!--<section class="col-md-4">
-                        <figure>
-                            <picture>
-                                <source class="img-responsive" data-bind="attr: { srcset: profilePicture}" />
-                                <img class="profile-picture" data-bind=" attr: { src: profilePicture}" alt="Profile Picture">
-                            </picture>
-                        </figure>
-                    </section>-->
-
-                    <section class="col-md-8 detail-pane">
-                        <h4 data-bind="text: designation"></h4>
-                        <section>
-                            <em class="fa fa-map-marker"></em> <span data-bind="text: location"></span>
-                        </section>
-                    </section>
-                </section>
-            </section>
-
-            <hr>
-
-            <section id="technology" class="technology-stack">
-                <h4 class="heading-color">
-                    <span class="fa-stack fa-lg">                        
-                        <em class="fa fa-circle fa-stack-2x"></em>
-                        <em class="fa fa-wrench fa-stack-1x  fa-inverse"></em>
-                    </span> Summarized Skills
-                </h4>
-                <ul class="ul-no-style" data-bind="foreach: technologies">
-                    <li data-bind="text: $data" class="li-less-space"></li>
-                </ul>
-            </section>
-
-            <hr>
-
-            <section id="occupation" class="work-experiance">
-                <h4 class="heading-color">
-                    <span class="fa-stack fa-lg">                        
-                        <em class="fa fa-circle fa-stack-2x"></em>
-                        <em class="fa fa-briefcase fa-stack-1x fa-inverse"></em>
-                    </span> Occupational Experience
-                </h4>
-                <ul class="ul-no-style" data-bind="foreach: occupations">
-                    <li>
-
-                        <section class="li-main-item" data-bind="text: company"></section>
-                        <section data-bind="text: position"></section>
-                        <section class="date-text">
-                            <span data-bind="text: startDate"></span> - <span data-bind="text: endDate"></span>
-                        </section>
-                    </li>
-                </ul>
-            </section>
-
-            <hr>
-
-            <section id="education" class="education">
-                <h4 class="heading-color">
-                    <span class="fa-stack fa-lg">                        
-                        <em class="fa fa-circle fa-stack-2x"></em>
-                        <em class="fa fa-graduation-cap fa-stack-1x fa-inverse"></em>
-                    </span> Education
-                </h4>
-                <ul class="ul-no-style" data-bind="foreach: education">
-                    <li>
-                        <section class="li-main-item">
-                            <span data-bind="text: school"></span> -
-                            <span data-bind="text: qualification"></span>
-                        </section>
-                        <section><span class="date-text" data-bind="text: year"></span></section>
-                    </li>
-                </ul>
-            </section>
-
-
-            <hr>
-
-            <section id="contact" class="contact">
-
-                <h4 class="heading-color">
-                    <span class="fa-stack fa-lg">                        
-                        <em class="fa fa-circle fa-stack-2x"></em>
-                        <em class="fa fa-phone-square fa-stack-1x fa-inverse"></em>
-                    </span> Contact
-                </h4>
-                <ul class="ul-no-style" data-bind="foreach: contacts">
-                    <li>
-                        <section data-bind="text: contactDetail"></section>
-                    </li>
-                </ul>
-            </section>
-
-
-        </section>
-
-        <section id="projects" class=" col-xs-12 col-sm-12 col-md-7 col-lg-7 projects">
-            <h3 class="heading-color">
-                <span class="fa-stack fa-lg">                        
-                        <em class="fa fa-circle fa-stack-2x"></em>
-                        <em class="fa fa-archive fa-stack-1x fa-inverse"></em>
-                    </span> Projects
+<body>
+    <header>
+        <section id="user" class="container text-center">
+            <h1><span data-bind="text: name"></span> <span data-bind="text: surname"></span></h1>
+            <h3>
+                 < <span data-bind="text: designation"></span> />
             </h3>
-
-            <hr>
-
+            <hr />
+            <h1>Portfolio</h1>
+            <p>Welcome to my Portfolio for examples of work done in the past.</p>
+        </section>
+    </header>
+    <section class="container">
+        <section id="projects">
             <section class="row">
-
-
                 <section data-bind="foreach: projects">
                     <section class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-
                         <section class="thumbnail">
-                            <figure class="center-block">
-                                <picture>
-                                    <img class="img-responsive center-block thumbnail-size" data-bind=" attr: { src: projectPicture.thumbnail}" alt="Project Picture">
-                                </picture>
-                            </figure>
-
-                            <a class="text-center" data-toggle="modal" data-target="#project" data-bind="click: $parent.showProject">
+                            <a class="text-center" data-toggle="modal" data-target="#project" data-bind="click: $parent.showProject" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <figure class="center-block">
+                                    <picture>
+                                        <img class="img-responsive center-block thumbnail-img" data-bind=" attr: { src: projectPicture.thumbnail}" alt="Project Picture">
+                                    </picture>
+                                </figure>
                                 <h4 class="text-center" data-bind="text: name"></h4>
                             </a>
                         </section>
-
                     </section>
                 </section>
-
                 <div data-bind="with: selectedProject" class="modal fade" id="project" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -172,32 +48,26 @@
                                 <h4 class="modal-title" data-bind="text: name"></h4>
                             </div>
                             <div class="modal-body">
-
                                 <figure class="center-block">
                                     <picture>
                                         <source class="img-responsive center-block" data-bind="attr: { srcset: projectPicture.modal}" />
                                         <img class="img-responsive center-block" data-bind=" attr: { src: projectPicture.modal}" alt="Project Picture">
                                     </picture>
                                 </figure>
-
                                 </br>
                                 </hr>
                                 <p data-bind="text: description">
                                 </p>
-
                                 <section class="technologies">
                                     <h5>Technologies Used:</h5>
                                     </hr>
-
                                     <section data-bind="foreach: technologies">
                                         <picture class="technology" data-toggle="tooltip" data-placement="top" data-bind="attr: {title: name}">
                                             <source data-bind="attr: { srcset: img}" media="(min-width: 401px)" />
                                             <img data-bind=" attr: { src: img, alt: name}" class="img-responsive">
                                         </picture>
                                     </section>
-
                                 </section>
-
                             </div>
                             <div class="modal-footer">
                                 <a class="btn btn-default btn-left pull-left" type="button" data-bind="attr: { href: githubLink}">
@@ -207,35 +77,32 @@
                         </div>
                     </div>
                 </div>
-
-
             </section>
         </section>
-
-        <section class="col-md-1">
-        </section>
     </section>
-
     <footer>
-        <section class="text-center">
-            Peter John Manuel Portfolio
-        </section>
+        <table id="contact" data-bind="foreach: contacts">
+            <tr>
+                <td width="40%">
+                    <em class="fa" data-bind="css: contactIcon "></em>
+                    <span data-bind="text: contactType"></span>
+                </td>
+                <td width="60%" class="text-left">
+                    <span class="contact-details " data-bind="text: contactDetails"></span>
+                </td>
+            </tr>
+        </table>
+        Peter John Manuel Portfolio
     </footer>
     <!--build:js js/app.min.js -->
     <script src="js/jquery.min.js"></script>
     <script src="js/knockout.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/technologylist.js"></script>
-    <script src="js/Model/Technology.js"></script>
-    <script src="js/Model/Occupation.js"></script>
     <script src="js/Model/Detail.js"></script>
-    <script src="js/Model/Education.js"></script>
     <script src="js/Model/Contact.js"></script>
     <script src="js/Model/Project.js"></script>
-    <script src="js/ViewModels/TechnologyViewModel.js"></script>
-    <script src="js/ViewModels/OccupationViewModel.js"></script>
     <script src="js/ViewModels/DetailViewModel.js"></script>
-    <script src="js/ViewModels/EducationViewModel.js"></script>
     <script src="js/ViewModels/ContactViewModel.js"></script>
     <script src="js/ViewModels/ProjectViewModel.js"></script>
     <script src="js/app.js"></script>
