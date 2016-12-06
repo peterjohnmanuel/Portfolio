@@ -1,0 +1,50 @@
+CSS 3 Logo
+Last Accessed: 17/02/2016
+https://www.google.co.za/imgres?imgurl=http://connexo.de/img/logos/CSS3_Logo.png&imgrefurl=http://connexo.de/html5-css3-jquery.php&h=727&w=512&tbnid=MhoIkNaR72cCfM:&docid=BTrPnUqqdnf3eM&ei=Kh_EVtSVCYGMar6EiJAJ&tbm=isch&ved=0ahUKEwjU0qOkof7KAhUBhhoKHT4CApIQMwgwKAAwAA#h=727&imgdii=MhoIkNaR72cCfM%3A%3BMhoIkNaR72cCfM%3A%3BmJmGZOPb3xIjNM%3A&w=512
+
+RWD Logo
+Last Accessed: 17/02/2016
+https://www.google.co.za/imgres?imgurl=http://www.appbits.com/images/rwd-logo.png&imgrefurl=http://www.appbits.com/&h=256&w=256&tbnid=DowqzUiCHtBzEM:&docid=WGRuGeEnQzqVYM&ei=yh_EVrqsN8Tsav69kPgG&tbm=isch&ved=0ahUKEwi6uffwof7KAhVEthoKHf4eBG8QMwgcKAEwAQ
+
+HTML Logo
+Last Accessed: 17/02/2016
+https://www.google.co.za/imgres?imgurl=https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png&imgrefurl=https://www.w3.org/html/logo/&h=256&w=256&tbnid=WkP6tlRFLsHbcM:&docid=SZyrCl7FlqYr9M&ei=Rh_EVsmAL4epa4axupgI&tbm=isch&ved=0ahUKEwjJu_axof7KAhWH1BoKHYaYDoMQMwgvKAAwAA
+
+Grunt Logo
+Last Accessed: 20/02/2016
+https://i.cloudup.com/bDkmXyEmr5.png
+
+JQuery Logo
+Last Accessed: 20/02/2016
+https://www.google.co.za/imgres?imgurl=http://www.ianhoar.com/wp-content/uploads/2011/06/jquery_logo.png&imgrefurl=http://www.ianhoar.com/2011/06/05/clearing-the-jquery-animation-queue/&h=193&w=200&tbnid=zmFAhCefDoOm-M:&docid=SGFU3DcbYg9IqM&ei=lH_IVvzmEIKGaLDOhugH&tbm=isch&ved=0ahUKEwj8gNHlzYbLAhUCAxoKHTCnAX0QMwgzKAMwAw
+
+Font Awesome Logo
+Last Accessed: 20/02/2016
+https://www.google.co.za/imgres?imgurl=http://www.wptavern.com/wp-content/uploads/2013/12/font-awesome.png&imgrefurl=http://www.tonystrack.com/blog-font-awesome.html&h=526&w=526&tbnid=wCc4Lj94dsmwuM:&docid=JX-sCHF4vRBEHM&ei=zIDIVpbkM4Hsap-ll9AB&tbm=isch&ved=0ahUKEwiW-tb6zobLAhUBthoKHZ_SBRoQMwgyKAMwAw
+
+Javascript Logo
+Last Accessed: 20/02/2016
+https://www.google.co.za/imgres?imgurl=http://whiteprompt.com/wp-content/uploads/2015/09/logo-immutable.png&imgrefurl=http://whiteprompt.com/react-practice/&h=330&w=587&tbnid=tWKM8HMuhK7PEM:&docid=Sby3QSnkBRjTAM&ei=9oTIVuk5hv5o26OcwAo&tbm=isch&ved=0ahUKEwjpjMv20obLAhUGPxoKHdsRB6gQMwgyKAIwAg
+
+Underconstrunction Logo
+Last Accessed: 20/02/2016
+https://www.google.co.za/imgres?imgurl=http://www.daneco.ph/admin/web_pics/under_construction.png&imgrefurl=http://allpix.club/pages/w/website-under-construction-png/&h=1080&w=1920&tbnid=vcYFSPddCjNE4M:&docid=uShJJYNiGaprxM&ei=X6jIVqrNIYm_aNzfo7AN&tbm=isch&ved=0ahUKEwjq-K_Z9IbLAhWJHxoKHdzvCNYQMwhQKBUwFQ
+
+
+Portfolio Background:
+Last Accessed: 29/02/2016
+
+http://p1.pichost.me/i/66/1906205.jpg
+
+Bootstrap navbar Configuration Theme:
+Last Accessed: 20/02/2016
+http://work.smarchal.com/twbscolor/css/e74c3cc0392becf0f1ffbbbc0
+
+
+Grunt Repos :
+
+grunt-contrib-concat
+grunt-contrib-uglify
+grunt-responsive-images
+grunt-contrib-cssmin
+grunt-contrib-watch
