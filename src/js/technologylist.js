@@ -72,7 +72,7 @@ var technologyList = {
 
     "raspberryPi": {
         name: "Raspberry Pi",
-        img: "img/logos/raspberry_pi_logo"
+        img: "img/logos/raspberry_pi_logo.png"
     },
 
     "responsiveWebDesign": {
