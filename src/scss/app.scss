@@ -1,121 +1,133 @@
 @import "bootstrap";
 @import "bootstrap/theme";
-
-$mainBackground: #000 ;
+$mainBackground: #212121;
 $mainForeColor: #fff;
+$themeColor: #eceff1;
+$backgroundAlternative: #424242;
 
-$mainColor: #236b8e;
+body {
+    background: $mainBackground;
+    color: #ffffff;
+}
+
+header {
+    
+    background-color: $backgroundAlternative;
+    padding: 20px 0px;
+    margin-bottom: 40px;
+    h2,
+    h3 {
+        margin: 0px;
+    }
+}
+
+footer {
+    position: absoulte;
+    bottom: 0;
+    width: 100%;    
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background: $backgroundAlternative;
+}
+
+.modal-content {
+    background: $mainBackground;
+    color: #ffffff;
+    border-radius: 0px;
+}
+.modal-header{
+    background: $backgroundAlternative;
+}
+.modal-footer{
+    background: $backgroundAlternative;
+}
 
 // Box content with content detials
-.content{
+.content {
     box-shadow: 0.5px 0.5px 2px 2px #888888;
     margin-bottom: 40px;
 }
 
 // style for picture
-.ul-no-style{
-
+.ul-no-style {
     padding: 0px;
-    padding-left: 25px; 
-
-    li{
+    padding-left: 25px;
+    li {
         padding-bottom: 10px;
         list-style: none;
         font-size: 15px;
     }
-
-    .li-less-space{
+    .li-less-space {
         padding-bottom: 0px;
     }
 }
 
-// Picture size
-.profile-picture{
-    width: 125px;
-    height: 125px;
-}
-
 // Main Item highlighted in list
-.li-main-item{
+.li-main-item {
     font-weight: bold;
 }
 
 // Technologies section
-.technologies{
+.technologies {
     margin-top: 60px;
 }
 
 // Project technology
-.technology{
+.technology {
     margin-left: 10px;
-    margin-right: 10px;     
+    margin-right: 10px;
     display: inline-block;
 }
 
-// Thumbnail picture size
-.thumbnail-size{
+.thumbnail-img {
     height: 225px;
     width: 225px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
-// Main Heading color
-.heading-color{
-    color: $mainColor;
-}
-
-// Top navigation bar
-.navbar {
-    background: $mainColor;
-    color: #ffffff;
-    border: 0px;
+.thumbnail {
     border-radius: 0px;
-    
-    .navbar-brand{
-        color: #ffffff;
-    }
-}
-
-// Top navigation flat
-@media (min-width: 768px){
-    .navbar {
-        border-radius: 0px; 
-    }
-}
-
-// Date Text
-.date-text{
-    color: #888888;
-    font-style: italic;
-}
-
-// Projects container
-.projects{
-    box-shadow: 0.5px 0.5px 2px 2px #888888;
     margin-bottom: 40px;
-    margin-left: 15px; 
+    background: #424242;
+    border: 0px;
+    padding-top: 20px;    
+    opacity:1;
+    transition-duration: 1s;
+    transition-property: opacity;
 }
 
-// Details without profile picture
-.detail-pane{
-    margin-left: 20px;
+.thumbnail:hover{
+    opacity:0.5;
 }
 
-// Footer 
-footer
-{
-    position: absoulte;    
-    bottom: 0;    
-    width: 100%;
-    background-color: $mainColor;
-    color :white;    
-    font-weight: bold;
-    margin-top: 25px; 
-    padding-top: 15px;
-    padding-bottom: 15px;
+#contact{
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+a,
+button {
+    border-radius: 0px;
+}
 
-    .footer-text{
-        margin-top: 20px;
-        padding-bottom: 20px;
-    }
+.contact-details{
+    margin-left:10px;
+    padding: 10px;
+}
 
+a {
+    color: #ffffff;    
+}
+
+a:hover {
+    text-decoration: none;
+    color: #212121;
+}
+
+.btn{
+    border-radius: 0px;
 }
