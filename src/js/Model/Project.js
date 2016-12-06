@@ -19,10 +19,9 @@ function Project(name, description, technologies, githubLink, projectPicture) {
 
 
 /** Project 1: Udacity Front End Nano Degree Portfolio */
-var project1Description = `Project 1 of the Udacity Front End Nano Degree Program involved creating 
-a portfolio detailing all of the projects done in the past. During the podcasts of the project technologies such as HTML5, CSS3, Responsive Web Design
-, Grunt etc was introduced to create build up to the project artifact.
- Overtime I refactored the portfolio project to include technologies and frameworks such as gulp, sass ,knockout and mvvm for better code management`;
+var project1Description = `The portfolio was developed to showcase projects during a course and for the rest of my career. 
+During the podcasts of this module languages and methodologies such as HTML5, CSS3, Responsive Web Design, Grunt etc was introduced to create a foundation for building the project artefact. 
+Overtime I refactored the portfolio to include technologies and frameworks such as gulp, sass, knockout and mvvm for better code management and to host it on a webserver.`;
 
 /**Project1: Pictures */
 var project1Pictures =
@@ -32,14 +31,15 @@ var project1Pictures =
     };
 
 /**Project 1: Technologies */
-var project1Technologies = [technologyList.bootstrap, technologyList.bower, technologyList.css3, technologyList.fontAwesome, technologyList.grunt, technologyList.gulp, technologyList.html5,
-    technologyList.javascript, technologyList.jQuery, technologyList.responsiveWebDesign, technologyList.sass];
+var project1Technologies = [technologyList.apache, technologyList.bootstrap, technologyList.bower, technologyList.css3, technologyList.fontAwesome, technologyList.grunt, technologyList.gulp, technologyList.html5,
+    technologyList.javascript, technologyList.jQuery, technologyList.raspberryPi, technologyList.responsiveWebDesign, technologyList.sass];
 
 /** Project 2: Udacity Front End Nano Degree Online Resume */
-var project2Description = `Project 2 of the Udacity Front End Nano Degree Program was to create an online resume. The concept of using template patterns
-was discussed during the podcasts in order to complete the project. Another concept that was introduced but is not new to me was version control. Using the git 
-version control I was able to keep track of changes and learnt about branching and how version control can make development easier during an applications life cycle.
-`;
+var project2Description = `The online resume was part of the course taken to showcase my experience. 
+The concept of using template patterns was discussed during the podcasts in order to complete the project. 
+Another concept that was introduced but is not new to me was version control. 
+Although version control is not new to me learning and using the git version control I was able to keep track of changes and learnt about branching and how version control can make development and tracking changes easier during an applications life cycle. 
+Overtime I refactored the resume for better code management.`;
 
 /** Project 2: Pictures */
 var project2Pictures =
@@ -49,14 +49,12 @@ var project2Pictures =
     };
 
 /** Project 2: Technologies */
-var project2Technologies = [technologyList.bootstrap, technologyList.bower, technologyList.css3, technologyList.fontAwesome, technologyList.gulp, technologyList.html5,
+var project2Technologies = [technologyList.apache, technologyList.bootstrap, technologyList.bower, technologyList.css3, technologyList.fontAwesome, technologyList.gulp, technologyList.html5,
     technologyList.javascript, technologyList.jQuery, technologyList.responsiveWebDesign, technologyList.sass];
 
 
 /** Project 3: Udacity Front End Nano Degree HTML5 Game */
-var project3Description = `Project 3 of the Udacity Front End Nano Degree Program involed the usage of javascript design patterns. Javascript patterns such as prototype chaining was
-used in order to create a small HTML game. Concepts such as inheritance was introduced in the javascript langauge to objects interacting with one another during the game cycle. During
-podcasts the benifits of readme's was also discussed and how it can help other developers get started using you projects.
+var project3Description = `Developing a basic gaming engine was used to learn javascript patterns such as prototype chaining during one of the modules of the course. Concepts such as inheritance was introduced in the javascript language to objects interacting with one another during the game cycle. During podcasts the benefits of readme's was discussed. Learning how to write readme mock-ups is important as it can help other developers getting started using projects.
 `;
 
 /** Project 3: Pictures */
@@ -71,9 +69,7 @@ var project3Technologies = [technologyList.bootstrap, technologyList.css3, techn
 
 
 /** Project 4: Udacity Front End Nano Degree Website Optimization */
-var project4Description = `Project 4 of the Udacity Front End Nano Degree Program was a bit different to projects that I'm usally use to developing. Rather than focusing on 
-web and application design this project focused on the performance of a website. Using google chrome developer tools, a given solution was analysed and had to be optimizied in order to make the 
-website a more friendly user experiance. Other tools such as gulp and ngrok was also used to help reduce jank in the given website. 
+var project4Description = `Often when developing software sometimes the critical rendering path of the website is overlooked. This project demonstrated how to use Google chrome developer tools to remove jank and to optimize the performance of the website by analysing the timeline and rendering path of the Document Object Module (DOM).Rather than focusing on web and application design this project focused on the performance of a website. Using Google chrome developer tools, a given solution was analysed and had to be optimized in order to make the website a friendlier user experience. Other tools such as gulp, Google page speed insights and ngrok was also used to help reduce jank in the given website.
 `;
 
 /** Project 4: Pictures */
@@ -84,12 +80,10 @@ var project4Pictures =
     };
 
 /** Project 4: Technologies */
-var project4Technologies = [];
+var project4Technologies = [technologyList.gulp];
 
 /** Project 5: Udacity Front End Nano Degree Neighborhood Map */
-var project5Description = `Project 5 of the Udacity Front End Nano Degree Program was to create an Neighborhood Map project detailing places that you might want to visit. During the build up to this project
-the design patterns were introduced such as MV*, MVC, MVP and MVVM. Later existing frameworks such as knockout js was introduced. Another concept introduced was the integration of 
-third party api's. During the neighborhood map project google maps api was required in order to create a map with map markers.     
+var project5Description = `Usages of API is becoming more and more popular. The Neighbourhood Map is a basic project that shows the usage of the 3rd party API's. During the build up to this project, design patterns such as such as MVC, MVP and MVVM was introduced. Later existing frameworks such as KnockoutJS was used to create a MVVM application. This projects requirement was to use Google maps API and another 3rd party API to display information on places with map markers.        
 `;
 
 /**Project 5: Pictures */
@@ -104,9 +98,7 @@ var project5Technologies = [technologyList.bootstrap, technologyList.bower, tech
     technologyList.html5, technologyList.javascript, technologyList.knockout, technologyList.responsiveWebDesign, technologyList.sass];
 
 /** Project 6: Udacity Front End Nano Degree Feed Reader */
-var project6Description = `Project 6 of the Udacity Front End Nano Degree Program discussed the importance of testing. During the podcasts the concept of Test Driven Development (TDD)
-was discussed in web development. Using testing to drive the development of the application to make sure you application still works while making changes is important to keep the integrity
-of a working application. Jasmine testing framework was used to write tests in an existing application during this project.
+var project6Description = `Benefits of testing first in the software is a great asset to reduce time when an application has a bug.  Although it can take some time writing tests, it’s a good practice to have when an expected outcome is not met. This module and project taken during a course discussed the concept of Test Driven Development (TDD) and Behaviour Driven Development (BDD) in web development. Using jasmine, testing was done to check the behaviour of elements and how triggering an event might affect the Document Object Model (DOM).
 `;
 
 /**Project 6: Pictures */
